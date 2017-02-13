@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>欢迎使用前端导航-WebFont-Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/semantic-ui/2.2.7/semantic.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="css/customize-masthead.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/googleg_lodp.ico" />
+</head>
+<body>
+    <!-- 下拉到一定的高度时候  导航栏 转变为自动固定尺寸 -->
+    <div class="ui large top fixed borderless hidden menu">
+        <div class="ui container" id="navbar-fixed"></div>
+    </div>
+    <!-- 头部 导航 部分 -->
+    <div class="pusher">
+       <div class="ui inverted vertical masthead center aligned segment zoomed">
+              <div class="ui container">
+                  <div class="ui secondary inverted pointing menu" style="border: none;" id="header_nav"></div>
+              </div>
+      <!-- ************** 搜索的主体部分显示 start ***********************************************************-->
+              <div class="ui text container">
+                  <h1 class="ui inverted header"><i id="logo" class="fa fa-graduation-cap"></i></h1>
+                  <h2>前端导航 &nbsp; &middot; &nbsp; WebFont-Search</h2>
+                  <div class="ui inverted fluid left icon action input" id="search-div">
+                      <i class="search icon"></i>
+                      <input id="search-query" type="text" placeholder="立即搜索">
+                      <select class="ui compact selection dropdown" id="search-services"></select>
+                      <div id="search-button" type="submit" class="ui icon primary button">Go</div>
+                  </div>
+                       <br/>
+                      <div class="ui inverted segment">
+                            <button class="ui inverted red button" id="Google" data-url='http://scholar.google.com/scholar?q=' data-suffix>谷歌学术</button>
+                            <button class="ui inverted orange button" id="baidu" data-url='http://xueshu.baidu.com/s?wd=' data-suffix>百度学术</button>
+                            <button class="ui inverted yellow button" id="xaiomuc" data-url='http://muchong.com/bbs/search.php?wd=' data-suffix>小木虫论坛</button>
+                            <button class="ui inverted olive button" id="cailiaoren" data-url='http://music.163.com/#/search/m/?s=' data-suffix='&type=1'>网易云音乐</button>
+                            <button class="ui inverted green button" id="zhihu" data-url='http://www.zhihu.com/search?q=' data-suffix>知乎</button>
+                       </div>
+              </div>
+        <!--  搜索的主体部分显示 End ******************************************************************-->
+        </div>
+  <!-- 内容 链接 -->
+  <div id="content" class="content"></div>
+   <!-- foot信息 -->
+   <footer id="footer">
+       <div class="footer_war war">
+           <div class="message">
+               如果本站对你有帮助，请添加收藏或将本网站分享给更多人！</br>
+               反馈请联系：<i class="fa fa-weibo">&nbsp;</i><a href="http://weibo.com/xcallen" target="_blank">@新浪微博</a> &nbsp; | &nbsp;<i class="fa fa-envelope-open"></i> Email:<a href="mailto:mrzonglunli@gmail.com">  mrzonglunli@gmail.com </a> | &nbsp; <i class="fa fa-twitter"></i> <a href="https://twitter.com/allentwt_93" target="_blank">Twitter</a>
+           </div>
+           <div class="declare">
+                Powed By &nbsp;<a href="http://www.semantic-ui.cn/" style="color: #20F3F6">Semantic-UI</a> &nbsp;| &nbsp;<a href="http://fontawesome.dashgame.com/" style="color: #20F3F6">Font Awesome</a> &nbsp; | &nbsp;<a href="https://jquery.com/download/" style="color: #20F3F6">Jquery</a>
+           </div>
+       </div>
+   </footer>
+    <!-- 侧边栏返回 -->
+    <aside id="backTop"></aside>
+    <!--Link Scripts -->
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/semantic-ui/2.2.7/semantic.min.js"></script>
+    <script type='text/javascript' src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="data/data.js" ></script>
+    <script type="text/javascript" src='js/search-suggest.js'></script>
+    <script type="text/javascript" src="js/index.js" ></script>
+</body>
+</html>
