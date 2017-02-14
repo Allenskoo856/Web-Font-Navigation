@@ -317,7 +317,7 @@ jQuery.extend( jQuery.easing,
         }
     });
 
-    // 下面五个 按钮注册点击 事件
+    /*// 下面五个 按钮注册点击 事件
     function btn_onclick(btn_id) {
         btn_id.click(function(){
             var service = $('#' + $('#search-services').val());
@@ -338,7 +338,7 @@ jQuery.extend( jQuery.easing,
     btn_onclick($('#baidu'));
     btn_onclick($('#xaiomuc'));
     btn_onclick($('#cailiaoren'));
-    btn_onclick($('#zhihu'));
+    btn_onclick($('#zhihu'));*/
 
     // Go 按钮点击事件注册
     $('#search-button').click(function() {
