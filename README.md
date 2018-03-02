@@ -2,7 +2,7 @@
 
 简单的前端网站资源导航,覆盖了大部分的资源.
 
-Demo: http://52kans.xyz/
+Demo: http://nav.zonglun.me/
 
 ![mark](http://ojd94jpsx.qnssl.com/blog/20170214/154916771.png)
 
